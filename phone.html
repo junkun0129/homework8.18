@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    :root {
+        --primary-bg: rgba(44,62,80 ,1);
+        --secondary-bg: rgba(0,0,0,0.9);
+        --box-shadow-color-1: gold;
+        --box-shadow-color-2: rgba(149,165,166 ,0.1);
+        --box-shadow-color-3: #ecf0f1;
+        --phone-width: 350px;
+        --phone-height: 700px;
+    }
+
+    body{
+     background-color: var(--secondary-bg);   
+    }
+
+    .phone{
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      background-color: var(--secondary-bg);
+      width: var(--phone-width);
+      height: var(--phone-height);
+      box-shadow: -1px -2px var(--box-shadow-color-1),3px 10px 4px var(--box-shadow-color-2);
+      border-radius: 40px;
+    }
+
+    .screen{
+        position: absolute;
+        background-color: var(--primary-bg);
+        width: 320px;
+        height: 550px;
+        top: 75px;
+        left: 15px;
+        bottom: auto;
+        right: auto;
+        border-radius: 10px;
+    }
+
+    .circule1{
+        position: absolute;
+        background-color: var(--primary-bg);
+        width: 6px;
+        height: 6px;
+        top: 15px;
+        left: 172px;
+        border-radius: 100px;
+
+    }
+    
+    .circule2{
+        position: absolute;
+        background-color: var(--primary-bg);
+        width: 8px;
+        height: 8px;
+        top: 25px;
+        left: 125px;
+        border-radius: 100px;
+
+    }
+
+    .circule3{
+        position: absolute;
+        background-color: var(--primary-bg);
+        width: 50px;
+        height: 8px;
+        top: 33px;
+        left: 150px;
+        border-radius: 100px;
+
+    }
+
+    .home{
+        position: absolute;
+        background-color: var(--secondary-bg);
+        width: 50px;
+        height: 50px;
+        bottom: 10px;
+        left: 150px;
+       border-radius: 100px;
+        box-shadow: -1px 1px 2px var(--box-shadow-color-1), 1px -1px 4px var(--box-shadow-color-3);
+    }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class = "phone">
+        <div class = "screen"></div>
+        <div class = "circule1"></div>
+        <div class = "circule2"></div>
+        <div class = "circule3"></div>
+        <div class = "home"></div>
+
+    </div>
+</body>
+</html>
